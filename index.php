@@ -9,12 +9,7 @@ include 'connect_bd.php';
 include 'functions.php';
 include 'articles.php';
 ?>
-<html>
-    <head>
-        <meta charset="windows-1251">
-        <title>SITE</title>
-    </head>
-    <body>
+
         <?php
         
         echo $myrow["title"];
@@ -22,5 +17,4 @@ include 'articles.php';
         echo $myrow["text"];
         
         ?>
-    </body>
-</html>
+    

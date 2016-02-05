@@ -1,18 +1,27 @@
         <?php
-        $mysqli = new mysqli('localhost', 'Admin', '', 'bd1');
-        if (mysqli_connect_errno()) {
-            echo "error" . mysqli_connect_error();
-        }
-       
+        $mysqli = mysqli_connect('localhost', 'Admin', '', 'bd1');
+        if (!$mysqli) { echo "error" . mysqli_connect_error(); }
+             
+              return $mysqli;  
+            
+        
+            
         $result = mysqli_query($mysqli, 'SELECT id, title, text FROM articles');
         if (!$result) {
             echo "error";
-        }
-        
-            $myrow = mysqli_fetch_array($result);
-         
-        
+        }   
+            
+            
+     
+            $myrow = mysqli_fetch_array($result);   
 
         
-        $mysqli->close();
-        ?>
+         
+            mysqli_close($mysqli);
+            
+            
+            
+            
+            
+            
+?>
