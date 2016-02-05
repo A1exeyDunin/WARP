@@ -12,9 +12,7 @@ include 'articles.php';
 
         <?php
         
-        echo $myrow["title"];
-        echo "<br/>";
-        echo $myrow["text"];
+       echo $articles_all;
         
         ?>
     
