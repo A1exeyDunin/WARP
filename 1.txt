@@ -1,5 +1,0 @@
-<?php>
-echo "hello";
-echo "vse";
-echo "kak dela?";
-<?>
