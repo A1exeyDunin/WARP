@@ -12,11 +12,10 @@ and open the template in the editor.
     <body>
         <?php
         
-
-        while ($row = mysql_fetch_assoc($result))  {
-        $myrow[] = $row; 
-         echo $myrow['title'] . "<br/>" . $myrow['text'] . "<br/>";
-        } 
+        foreach ($mydata as $val) {
+        echo $val['title'] . "<br/>" . $val['text'] . "<br/>";
+        }
+        
         
         ?>
     </body>
