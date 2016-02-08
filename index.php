@@ -12,7 +12,14 @@ include 'articles.php';
 
         <?php
         
-       echo $articles_all;
+        $mysqli = connect();
+        
+        $mydata = take($mysqli);
+        
+        echo $mydata['title'];
+        echo "<br/>";
+        echo $mydata['text'];
         
         ?>
+
     
