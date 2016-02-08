@@ -1,4 +1,4 @@
-<?php include 'connect_bd.php'; ?>
+
 
 
         <?php
@@ -6,15 +6,19 @@
         
 
         
-        function articles_all($mysqli)
+       
+        function take($mysqli)
         {
-            
-            $result = mysqli_query($mysqli, 'SELECT id, title, text FROM articles');
-        if (!$result) {
-        echo "error";}
-            $myrow = mysqli_fetch_array($result);   
-        }
-        
+
+
+        $result = mysqli_query($mysqli, 'SELECT id, title, text FROM articles');
+        {
+        if (!$result) { echo "error in functions <br/>"; }
+            else { $myrow = mysqli_fetch_array($result); }
+           
+        }       
+         return $myrow;
+        }   
         
       
         
