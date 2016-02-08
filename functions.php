@@ -1,27 +1,12 @@
+<?php
 
+function take($mysqli) {
+    $result = mysqli_query($mysqli, 'SELECT id, title, text FROM articles') or die(mysqli_error());
 
+    while ($myrow = mysqli_fetch_assoc($result)) {
+        echo $myrow['title'] . "<br/>" . $myrow['text'] . "<br/>";
+    }
+}
 
-        <?php
-        
-        
-
-        
-       
-        function take($mysqli)
-        {
-
-
-        $result = mysqli_query($mysqli, 'SELECT id, title, text FROM articles');
-        {
-        if (!$result) { echo "error in functions <br/>"; }
-            else { $myrow = mysqli_fetch_array($result); }
-           
-        }       
-         return $myrow;
-        }   
-        
-      
-        
-        
-        ?>
-    
+return $myrow;
+?>
