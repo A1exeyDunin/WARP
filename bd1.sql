@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Фев 08 2016 г., 15:05
+-- Время создания: Фев 10 2016 г., 16:08
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `title` varchar(255) NOT NULL,
   `text` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Дамп данных таблицы `articles`
@@ -39,7 +39,9 @@ CREATE TABLE IF NOT EXISTS `articles` (
 
 INSERT INTO `articles` (`id`, `title`, `text`) VALUES
 (1, 'title1', 'qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwerty'),
-(2, 'title2', 'ytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewq');
+(2, 'title2', 'ytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewqytrewq'),
+(3, 'title3', 'qazxswqazxswqazxswqazxswqazxswqazxswqazxswqazxswqazxswqazxswqazxswqazxswqazxswqazxsw'),
+(4, 'title4', 'wsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaqwsxzaq');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
