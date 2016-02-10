@@ -1,0 +1,76 @@
+html, body {
+    background: gold;
+}
+
+header {
+    margin-bottom: 20px;
+    background: crimson;
+}
+.header_i {
+    width: 100%;
+    height: 40%;
+    background: url(img/fsdfksdjfksjdf.gif)no-repeat left;
+}
+.header_t {
+    width: 100%;
+    height: 100%;
+    background: url(img/hujak.jpg) no-repeat right;
+}
+.header_c {
+    width: 100%;
+    height: 100%;
+    background: url(img/bkn.jpg) no-repeat center;
+}
+
+.content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    background: linen;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    background: orchid;
+    text-align: center;
+}
+
+#mainmenu {
+    position: relative;
+    overflow:hidden;
+    height:30px;
+    margin:20px 0;
+    border: 3px solid red;
+}
+#mainmenu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    position: relative;
+    left:50%;
+    float:left;
+    font:14px Arial, Helvetica, sans-serif;
+    height:30px;   
+}
+#mainmenu ul li {
+    position:relative;
+    left:-50%;
+    float:left;
+    margin:0 5px;
+    height:30px;
+}
+#mainmenu ul li a {
+    display:block;
+    text-decoration:none;
+    padding:6px 10px;
+    background: mediumspringgreen;
+    border: 1px solid mediumvioletred;
+}
+#mainmenu ul li a:hover {
+    background-color:#444;
+    color:yellow;
+}
