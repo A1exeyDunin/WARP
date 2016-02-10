@@ -6,7 +6,7 @@ function connect() {
         if (!$mysqli) {
             echo "error in connet <br/>" . mysqli_connect_error();
         } else {
-            echo "connect success <br/>";
+            echo "<br/>";
         }
         return $mysqli;
     }
