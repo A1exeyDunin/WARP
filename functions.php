@@ -9,4 +9,15 @@ function take($mysqli) {
 
     return $myrow;
 }
+
+
+
+
+function take1($mysqli,$id)
+{
+    $result = mysqli_query($mysqli, "SELECT id, title, text FROM articles WHERE id=$id") 
+           or die(mysqli_error());
+    $row = mysqli_fetch_assoc($result);
+    return $row;
+}
 ?>
