@@ -17,13 +17,15 @@ function take1($mysqli, $id) {
     return $row;
 }
 
-function insert($mysqli){
-    $result = mysqli_query($mysqli, "INSERT INTO comment (author, page_id, comment) "
-            . "VALUES ('author', 'page_id', 'comments')");
+function insert($mysqli, $author, $page_id, $comment) {
+    $result = mysqli_query($mysqli, "INSERT INTO comments (author, page_id, comment) "
+            . "VALUES ($author, $page_id, $comment)")
+            or die(mysqli_error());
+    return $result;
 }
 
-function comment($mysqli,$page_id){
-    $result = mysqli_query($mysqli, "SELECT * FROM comment WHERE page_id=$page_id")
+function comment($mysqli, $page_id) {
+    $result = mysqli_query($mysqli, "SELECT author, comment FROM comments WHERE page_id=$page_id")
             or die(mysqli_error());
     $row = mysqli_fetch_assoc($result);
     return $row;
