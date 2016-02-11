@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Фев 11 2016 г., 15:34
+-- Время создания: Фев 11 2016 г., 16:46
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -57,7 +57,15 @@ CREATE TABLE IF NOT EXISTS `comments` (
   `author` varchar(26) NOT NULL,
   `comment` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Дамп данных таблицы `comments`
+--
+
+INSERT INTO `comments` (`id`, `page_id`, `author`, `comment`) VALUES
+(1, 1, 'User', 'qwertyuiopasdfghjklzxcvbnm'),
+(2, 2, 'user', 'vnkaeudgbdsgjkdsbvjkdsbvsdbvdbvfshlvbjldahbvhlbvlhdbv');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
