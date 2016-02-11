@@ -14,7 +14,7 @@
             <p><?= $mydata['text'] ?></p>
 
             <hr>
-
+            Comments:
             <h4><?= $mydata1['author'] ?></h4>
             <p><?= $mydata1['comment'] ?></p>
 
