@@ -9,25 +9,32 @@
     <body>
 
         <div class="content">
-            <?php
-            // echo $mydata['title'] . "<br/>" . $mydata['text'] . "<br/>";
-            ?>
-
 
             <h3><?= $mydata['title'] ?></h3>
             <p><?= $mydata['text'] ?></p>
 
+            <hr>
 
-            <form action="" method="post">
-                <p>Name</p>
-                <input type="text">
-                <p>Theme</p>
-                <input type="text">
-                <p>Write comment:</p>
-                <textarea name="comment" rows="10" cols="60"></textarea>
-                <br>
-                <input type="submit" value="Add comment">
+            <h4><?= $mydata['author'] ?></h4>
+            <p><?= $mydata['comment'] ?></p>
+
+            <form name="comment" action="single_view.php" method="post">
+                <p>
+                    <label>Author:</label>
+                    <input type="text" name="name" />
+                </p>
+                <p>
+                    <label>Comment:</label>
+                    <br />
+                    <textarea name="text_comment" cols="80" rows="10"></textarea>
+                </p>
+                <p>
+                    <input type="hidden" name="page_id" value="150" />
+                    <input type="submit" value="Send" />
+                </p>
             </form>
         </div>
+        
+        
     </body>
 </html>
