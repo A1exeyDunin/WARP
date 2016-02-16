@@ -18,7 +18,7 @@
         </header>
         <div id="mainmenu">
             <ul>
-                <li><a href="http://localhost/proj1/index.php#"> MAIN </a></li>
+                <li><a href="#"> MAIN </a></li>
                 <li><a href="#">link 2</a></li>
                 <li><a href="#">link 3</a></li>
                 <li><a href="#">link 4</a></li>

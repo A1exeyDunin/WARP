@@ -20,7 +20,7 @@
 
             <hr>
 
-            <form name="comments" action="../single_article.php" method="post">
+            <form name="comments" action="../single_article.php?id=<?= $mydata['id'] ?>" method="post">
                 <p>
                     <label>Author:</label>
                     <input type="text" name="author" />
@@ -31,8 +31,8 @@
                     <textarea name="comment" cols="80" rows="10"></textarea>
                 </p>
                 <p>
-                    <input type="hidden" name="page_id" value="150" />
-                    <input type="submit" value="Send" />
+                    <input type="hidden" name="page_id" value="<?php echo $id ?>" />
+                    <input type="submit" value="Send"  />
                 </p>
             </form>
         </div>
