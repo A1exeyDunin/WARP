@@ -2,7 +2,7 @@
 
 include 'functions/connect_bd.php';
 include 'functions/functions.php';
-
+header("Content-Type: text/html; charset=utf-8");
 $mysqli = connect();
 
 

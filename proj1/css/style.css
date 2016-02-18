@@ -10,13 +10,16 @@ header {
     margin-bottom: 20px;
     background: dimgray;
 }
-
+hr{
+    border-top: 1px solid #C5BBBB;
+}
 .content {
-    height: 100%;
-    width: 70%;
+    width: 85%;
     margin: auto;
     padding: 20px;
-    background: khaki;
+    background: #FFFCE3;
+    min-height: 850px;
+    margin-top: 24px;
 }
 
 footer {
@@ -31,7 +34,9 @@ a:link {
 a:visited {
     color: blue;
 }
-
+form{
+    width: 60%;
+}
 #mainmenu {
     position: relative;
     overflow: hidden;
