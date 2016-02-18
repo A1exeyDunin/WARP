@@ -1,8 +1,7 @@
-
+<?PHP header("Content-Type: text/html; charset=utf-8"); ?>
 <html>
     <head>
-        <meta charset="utf-8">
-
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <title></title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -12,18 +11,26 @@
 
             <h3><?= $mydata['title'] ?></h3>
             <p><?= $mydata['text'] ?></p>
-
-            <hr>
-            Comments:
-            <h4><?= $mydata1['author'] ?></h4>
-            <p><?= $mydata1['comment'] ?></p>
-
             <hr>
 
-            <form name="comments" action="../single_article.php?id=<?= $mydata['id'] ?>" method="post">
+            <?php
+            if (!isset($mydata1)) {
+                echo "no comments";
+            } else {
+
+                foreach ($mydata1 as $com) {
+
+                    echo $com['author'] . "<br/>";
+
+                    echo $com['comment'] . "<br/>" . "<hr>";
+                }
+            }
+            ?>
+            
+            <form name="comments" action="../single_article.php?action=add&id=<?= $mydata['id'] ?>" method="post">
                 <p>
                     <label>Author:</label>
-                    <input type="text" name="author" />
+                    <input type="text" name="author" required/>
                 </p>
                 <p>
                     <label>Comment:</label>
@@ -34,6 +41,9 @@
                     <input type="hidden" name="page_id" value="<?php echo $id ?>" />
                     <input type="submit" value="Send"  />
                 </p>
+            </form>
+            <form>
+                 <a href="http://site.ua">На главную</a> 
             </form>
         </div>
 

@@ -27,11 +27,9 @@ function insert($mysqli, $author, $page_id, $comment) {
 function comment($mysqli, $page_id) {
     $result = mysqli_query($mysqli, "SELECT author, comment FROM comments WHERE page_id=$page_id")
             or die(mysqli_error());
-    while(
-    $row = mysqli_fetch_assoc($result)){
-        print_r($row);
+    while (
+    $row = mysqli_fetch_assoc($result)) {
+        $myrow[] = $row;
     }
-    
-
-    return $row;
+    return $myrow;
 }
