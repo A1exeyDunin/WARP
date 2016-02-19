@@ -4,9 +4,14 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <title>SITE</title>
+        <link rel="stylesheet" href="../css/bootstrap-theme.css"/>
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <font face="Arial">
         <header>
             <div class="header">
             </div>
@@ -23,16 +28,17 @@
         <div class="content">
             <?php
             foreach ($mydata as $val) {
-                echo '<a href = single_article.php?id=' . $val['id'] . '>' . $val['title'] . "</a><br/>"
-                . $val['text'] . "<br/>";
+                echo '<a href = single_article.php?id=' . $val['id'] . '>' . $val['title'] . "</a><br/><br/>"
+                . $val['text'] . "<br/><br/>";
             }
             ?>
 
-            <p>вмирявпмивпарлпилкдвпмвочарпьквкиерилд </p>
+            <p> </p>
         </div>
         <footer>
             <div class="footer">
             </div>
         </footer>
+        </font>
     </body>
 </html>
