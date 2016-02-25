@@ -18,14 +18,13 @@ if ($action == "add") {
     $page_id = $_POST["page_id"];
     $comment = $_POST["comment"];
 
-    $insert = insert($mysqli, $author, $page_id, $comment);
+    $insert = insert_comment($mysqli, $author, $page_id, $comment);
     header("Location: single_article.php?id=$id");
 } else {
     $id = $_GET["id"];
-    $mydata = take1($mysqli, $id);
-    $mydata1 = comment($mysqli, $id);
+    $mydata_article = take_single_article($mysqli, $id);
+    $mydata_comment = take_comment($mysqli, $id);
 
     include 'view/single_view.php';
 }
-
 ?>

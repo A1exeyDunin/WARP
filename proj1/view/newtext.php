@@ -11,25 +11,23 @@
     </head>
     <body>
         <div class="content">
-            <?php
-            // put your code here
-            ?>
 
-            <form name="articles" action="../index.php?action=add&id=<?= $mydata['id'] ?>" method="post">
+            <form name="articles" action="../index.php?action=add&id=<?= $mydata_article['id'] ?>" method="post">
                 <div class="form-group">
-                    <label>Title:</label>
+                    <label>Название статьи:</label>
                     <input type="text" name="title" class="form-item form-control" required placeholder="Введите название статьи"/>
                 </div>
                 <div class="form-group">
-                    <label>Text:</label>
+                    <label>Текст статьи:</label>
                     <br />
-                    <textarea name="text" class="form-control" cols="80" rows="10"></textarea>
+                    <textarea name="text" class="form-control" cols="100" rows="30"></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-success" value="Send"  />
+                    <input type="submit" class="btn btn-success" value="Опубликовать"  />
                 </div>
             </form>
-            <a href="http://site.ua">На главную</a>
+
+            <a href="../index.php">На главную</a>
         </div>
     </body>
 </html>

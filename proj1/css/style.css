@@ -2,14 +2,9 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: dimgrey;
+    background: #c0c0c0;
 }
 
-header {
-    height: 200px;
-    margin-bottom: 20px;
-    background: dimgray;
-}
 hr{
     border-top: 1px solid #C5BBBB;
 }
@@ -26,13 +21,25 @@ hr{
 footer {
     height: 30px;
     margin-top: 20px;
-    background: khaki;
+    background: #FFFCE3;
 }
 
+a{
+    color: #008;
+}
 a:link {
     color: black;
 }
 
 form{
     width: 60%;
+}
+
+.navbar-default{
+    margin-top: 5px;
+    background: #FFFCE3;
+}
+
+.nav-tabs{
+    margin-left: 35%; 
 }
