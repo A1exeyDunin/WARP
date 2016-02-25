@@ -32,44 +32,7 @@ footer {
 a:link {
     color: black;
 }
-a:visited {
-    color: blue;
-}
+
 form{
     width: 60%;
-}
-#mainmenu {
-    position: relative;
-    overflow: hidden;
-    height:30px;
-    margin:20px 0;
-    border: 10px solid khaki;
-    background: khaki;
-}
-#mainmenu ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-    position: relative;
-    left:50%;
-    float:left;
-    font:14px Arial, Helvetica, sans-serif;
-    height:30px;   
-}
-#mainmenu ul li {
-    position:relative;
-    left:-50%;
-    float:left;
-    margin:0 5px;
-    height:30px;
-}
-#mainmenu ul li a {
-    display:block;
-    text-decoration: none;
-    padding: 6px 10px;
-    background: khaki;
-}
-#mainmenu ul li a:hover {
-    background-color:dimgray;
-    color: white;
 }

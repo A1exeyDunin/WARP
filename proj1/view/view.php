@@ -1,5 +1,4 @@
 <?PHP header("Content-Type: text/html; charset=utf-8"); ?>
-<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -8,7 +7,7 @@
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
         <link rel="stylesheet" href="../css/bootstrap.css"/>
         <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <font face="Arial">
@@ -16,10 +15,10 @@
             <div class="header">
             </div>
         </header>
-        <div id="mainmenu">
-            <ul>
-                <li><a href="#"> Главная </a></li>
-                <li><a href="#">link 2</a></li>
+        <div id="mainmenu" class="navbar-default">
+            <ul class="nav nav-tabs"> 
+                <li><a href="#">Главная</a></li>
+                <li><a href="../view/newtext.php">Добавить статью</a></li>
                 <li><a href="#">link 3</a></li>
                 <li><a href="#">link 4</a></li>
                 <li><a href="#">link 5</a></li>

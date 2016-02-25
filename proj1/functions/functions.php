@@ -33,3 +33,10 @@ function comment($mysqli, $page_id) {
     }
     return $myrow;
 }
+
+function newtext($mysqli, $id, $title, $text) {
+    $result = mysqli_query($mysqli, "INSERT INTO articles (id, title, text) "
+            . "VALUES ('" . $id . "','" . $title . "','" . $text . "') ")
+            or die(mysqli_error());
+    return $result;
+}

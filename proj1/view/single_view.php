@@ -4,7 +4,7 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <title></title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
@@ -18,11 +18,8 @@
                 if (!isset($mydata1)) {
                     echo "no comments";
                 } else {
-
                     foreach ($mydata1 as $com) {
-
                         echo $com['author'] . "<br/>";
-
                         echo $com['comment'] . "<br/>" . "<hr>";
                     }
                 }
